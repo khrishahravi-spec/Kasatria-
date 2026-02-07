@@ -1,3 +1,9 @@
+function handleLogin(response) {
+    console.log("Google login success", response);
+    document.getElementById("login-screen").style.display = "none";
+    init();
+}
+
 let loggedIn = false;
 
 function handleLogin(response) {
